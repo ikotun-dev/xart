@@ -1,8 +1,10 @@
 package lexer
 
 import (
-	"ikotun-dev/xart/token"
+	// "ikotun-dev/xart/token"
 	"testing"
+
+	"github.com/ikotun-dev/xart/token"
 )
 
 func TestNextToken(t *testing.T) {
@@ -22,7 +24,6 @@ func TestNextToken(t *testing.T) {
 		{token.EOF, ""},
 	}
 	l := New(input)
-	12
 	for i, tt := range tests {
 		tok := l.NextToken()
 		if tok.Type != tt.expectedType {
