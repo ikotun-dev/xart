@@ -27,6 +27,12 @@ const (
 	IF        = "IF"
 	ELSE      = "ELSE"
 	RETURN    = "RETURN"
+	GT        = ">"
+	LT        = "<"
+	BANG      = "!"
+	MINUS     = "-"
+	SLASH     = "/"
+	ASTERISK  = "*"
 )
 
 var keywords = map[string]TokenType{
